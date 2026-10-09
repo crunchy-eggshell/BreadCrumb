@@ -1,5 +1,5 @@
 name: BreadCrumb
-description: $description
+description: A scavenger hunt plugin for Minecraft.
 version: '${version}'
 
 main: io.github.crunchy_eggshell.breadcrumb.BreadCrumb
@@ -8,5 +8,5 @@ loader: io.github.crunchy_eggshell.breadcrumb.BreadCrumbLoader
 api-version: '1.21.11'
 load: POSTWORLD
 
-authors: [ crunchy_eggshell ]
-website: none
+authors: [ crunchy-eggshell ]
+website: https://github.com/crunchy-eggshell/BreadCrumb
