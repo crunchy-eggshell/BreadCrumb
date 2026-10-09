@@ -4,7 +4,6 @@ version: '${version}'
 
 main: io.github.crunchy_eggshell.breadcrumb.BreadCrumb
 bootstrapper: io.github.crunchy_eggshell.breadcrumb.BreadCrumbBootstrap
-loader: io.github.crunchy_eggshell.breadcrumb.BreadCrumbLoader
 api-version: '1.21.11'
 load: POSTWORLD
 

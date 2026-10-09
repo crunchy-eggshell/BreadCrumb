@@ -1,0 +1,96 @@
+#===============================================================
+#-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+#                      BreadCrumb Config
+#-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+#===============================================================
+
+
+#The wand-item is the item your selection wand will be in-game when you do /breadcrumb | /crumb wand.
+wand-item: minecraft:breeze_rod
+
+#The natural-ground list contains all blocks the structures are allowed to spawn on
+natural-ground:
+  - minecraft:grass_block
+  - minecraft:dirt
+  - minecraft:sandstone
+  - minecraft:red_sandstone
+  - minecraft:calcite
+  - minecraft:tuff
+  - minecraft:rooted_dirt
+  - minecraft:packed_ice
+  - minecraft:blue_ice
+  - minecraft:coarse_dirt
+  - minecraft:podzol
+  - minecraft:mycelium
+  - minecraft:sand
+  - minecraft:red_sand
+  - minecraft:gravel
+  - minecraft:stone
+  - minecraft:deepslate
+  - minecraft:andesite
+  - minecraft:diorite
+  - minecraft:granite
+  - minecraft:snow_block
+  - minecraft:terracotta
+  - minecraft:red_terracotta
+  - minecraft:blue_terracotta
+  - minecraft:green_terracotta
+  - minecraft:yellow_terracotta
+  - minecraft:purple_terracotta
+  - minecraft:orange_terracotta
+  - minecraft:magenta_terracotta
+  - minecraft:cyan_terracotta
+  - minecraft:lime_terracotta
+  - minecraft:light_blue_terracotta
+  - minecraft:white_terracotta
+  - minecraft:black_terracotta
+  - minecraft:gray_terracotta
+  - minecraft:light_gray_terracotta
+  - minecraft:brown_terracotta
+  - minecraft:clay
+  - minecraft:mud
+  - minecraft:moss_block
+
+#The replaceable list contains all 'blocks' the structures are allowed to override and replace
+replaceable:
+  - minecraft:short_grass
+  - minecraft:tall_grass
+  - minecraft:fern
+  - minecraft:large_fern
+  - minecraft:dead_bush
+  - minecraft:bush
+  - minecraft:firefly_bush
+  - minecraft:short_dry_grass
+  - minecraft:tall_dry_grass
+  - minecraft:leaf_litter
+  - minecraft:wildflowers
+  - minecraft:snow
+  - minecraft:dandelion
+  - minecraft:poppy
+  - minecraft:blue_orchid
+  - minecraft:allium
+  - minecraft:azure_bluet
+  - minecraft:red_tulip
+  - minecraft:orange_tulip
+  - minecraft:white_tulip
+  - minecraft:pink_tulip
+  - minecraft:oxeye_daisy
+  - minecraft:cornflower
+  - minecraft:lily_of_the_valley
+  - minecraft:sunflower
+  - minecraft:lilac
+  - minecraft:rose_bush
+  - minecraft:peony
+  - minecraft:pink_petals
+
+#The flatness-tolerance number is the maximum height difference, in blocks, allowed in the ground under a structure.
+#The higher the number the less flat, the lower the number the more flat. (0-100).
+flatness-tolerance: 2
+
+#The attempts-per-sub number is the amount of times the drop sub will try to spawn.
+#The more attempts the more chunks it will load. (1-100).
+attempts-per-sub: 50
+
+#The buffer number is the amount of blocks the plugin will check around the structure.
+#If any of those buffer blocks aren't air or in the replaceable list, the structure will refuse to spawn on that attempt. (0-10).
+buffer: 2
