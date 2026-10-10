@@ -3,7 +3,6 @@ description: A scavenger hunt plugin for Minecraft.
 version: '${version}'
 
 main: io.github.crunchy_eggshell.breadcrumb.BreadCrumb
-bootstrapper: io.github.crunchy_eggshell.breadcrumb.BreadCrumbBootstrap
 api-version: '1.21.11'
 load: POSTWORLD
 
