@@ -22,6 +22,8 @@ structure:
   list-header: "<b><u><aqua>Structure list below, <count> structures saved:</aqua></u></b>"
   list-entry: "<yellow><name> : <size> : <description></yellow>"
   list-empty: "<color:#bf1711>There are no structures to list!</color>"
+  save-failed: "<b><u><color:#bf1711>The structure couldn't save, please check the console for errors!</color></u></b>"
+  delete-failed: "<b><u><color:#bf1711>The structure couldn't delete, please check the console for errors!</color></u></b>"
 
 spawn:
   started: "<color:#35bf28>Structure spawning started: Spawning <amount> of <structure> within <radius>!</color>"
