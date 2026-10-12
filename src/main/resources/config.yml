@@ -94,3 +94,10 @@ attempts-per-sub: 50
 #The buffer number is the amount of blocks the plugin will check around the structure.
 #If any of those buffer blocks aren't air or in the replaceable list, the structure will refuse to spawn on that attempt. (0-10).
 buffer: 2
+
+#The ground depth number is how many blocks under the surface must be solid. This stops structures spawning on map art or floating platforms.
+#0 turns it off. Higher values catch thicker builds but reject more spots in areas with caves. (0-16).
+ground-depth: 3
+
+#Debug logs every failed placement attempt and why to the console.
+debug: false

@@ -12,7 +12,7 @@ import java.util.Set;
 
 
 public record BreadCrumbConfig(Material wandMaterial, Set<Material> naturalGround, Set<Material> replaceable, int flatnessTolerance,
-                               int attemptsPerSub, int buffer) {
+                               int attemptsPerSub, int buffer, int groundDepth, boolean debug) {
 
     public static BreadCrumbConfig load(JavaPlugin plugin) {
         plugin.saveDefaultConfig();
@@ -34,7 +34,9 @@ public record BreadCrumbConfig(Material wandMaterial, Set<Material> naturalGroun
         int flatnessTolerance = clampAndLog(config.getInt("flatness-tolerance", 2), 0, 100, "flatness-tolerance", plugin);
         int attemptsPerSub = clampAndLog(config.getInt("attempts-per-sub", 50), 1, 100, "attempts-per-sub", plugin);
         int buffer = clampAndLog(config.getInt("buffer", 2), 0, 10, "buffer", plugin);
-        return new BreadCrumbConfig(wand, naturalGround, replaceable, flatnessTolerance, attemptsPerSub, buffer);
+        int groundDepth = clampAndLog(config.getInt("ground-depth", 3), 0, 16, "ground-depth", plugin);
+        boolean debug = config.getBoolean("debug", false);
+        return new BreadCrumbConfig(wand, naturalGround, replaceable, flatnessTolerance, attemptsPerSub, buffer, groundDepth, debug);
     }
 
     public boolean isNaturalGround(Material material) {
